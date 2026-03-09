@@ -1,10 +1,10 @@
-# Experiment 1
-## Demonstrate Various Data Types and Operators in Python
+Experiment 1
+Demonstrate Various Data Types and Operators in Python
 
-### Aim
+Aim:
 To demonstrate various data types and operators in Python.
 
-### Algorithm
+Algorithm:
 1. Start the program.
 2. Declare variables of different data types such as integer, float, string, and boolean.
 3. Display the values of the variables.
@@ -14,7 +14,7 @@ To demonstrate various data types and operators in Python.
 7. Display the results.
 8. Stop the program.
 
-Source Code
+Source Code:
 a=315
 b=800
 print("\nEquation Assignment Operators:\n")
