@@ -1,0 +1,95 @@
+# Experiment 5
+## Tuple and Related Operations in Python
+
+### Aim
+To write a Python program to demonstrate tuple operations and related functions.
+
+### Algorithm
+1. Start the program.
+2. Create a tuple with some elements.
+3. Display the tuple.
+4. Access elements using indexing.
+5. Find the length of the tuple using len().
+6. Count occurrences of an element using count().
+7. Find the index of an element using index().
+8. Display the results.
+9. Stop the program.
+
+Source Code
+a, b, c, x, y, z = (80, 20, 30, 40, 50, 60)
+
+# Function to display tuple elements
+def print_tuple(tup):
+    print("Tuple elements:")
+    for item in tup:
+        print(item)
+
+# Function to find length of tuple
+def find_length(tup):
+    count = 0
+    for _ in tup:
+        count += 1
+    return count
+
+# Function to count occurrence of element
+def count_element(tup):
+    print("Count of 20:", tup.count(20))
+
+# Function to find index
+def find_index(tup):
+    print("Index of 30:", tup.index(30))
+
+# Function to slice tuple
+def slice_tuple(tup):
+    print("Slicing (1:4):", tup[1:4])
+
+# Function to find max and min
+def max_min_tuple(tup):
+    print("Maximum value:", max(tup))
+    print("Minimum value:", min(tup))
+
+# Function to find sum
+def sum_tuple(tup):
+    print("Sum of elements:", sum(tup))
+
+# Function to unpack tuple
+def unpack_tuple(tup):
+    a, b, c, d, e, f = tup
+    print("Unpacked values:", a, b, c, d, e, f)
+
+# -------- MAIN PROGRAM --------
+def main():
+    tup = (a, b, c, x, y, z)
+
+    print("Original Tuple:", tup)
+    print_tuple(tup)
+
+    print("\nLength:", find_length(tup))
+    count_element(tup)
+    find_index(tup)
+    slice_tuple(tup)
+    max_min_tuple(tup)
+    sum_tuple(tup)
+    unpack_tuple(tup)
+
+Output:
+Original Tuple: (80, 20, 30, 40, 50, 60)
+Tuple elements:
+80
+20
+30
+40
+50
+60
+
+Length: 6
+Count of 20: 1
+Index of 30: 2
+Slicing (1:4): (20, 30, 40)
+Maximum value: 80
+Minimum value: 20
+Sum of elements: 280
+Unpacked values: 80 20 30 40 50 60
+
+
+main()
