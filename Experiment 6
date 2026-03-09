@@ -1,0 +1,139 @@
+Experiment 6
+Dictionary and Related Functions in Python (Phone Book Program)
+
+Aim:
+To write a Python program to implement a simple phone book using dictionary and demonstrate dictionary operations.
+
+Algorithm:
+1. Start the program.
+2. Create an empty dictionary to store contact names and phone numbers.
+3. Display a menu with options:
+   - Add Contact
+   - Search Contact
+   - Delete Contact
+   - Display Phone Book
+   - Exit
+4. Based on the user’s choice perform the required operation.
+5. Use dictionary functions like add, search, delete and display.
+6. Stop the program when the user selects Exit.
+
+Source Code:
+phone_book = {}
+
+while True:
+    print("\nPHONE BOOK MENU")
+    print("1. Add Contact")
+    print("2. Search Contact")
+    print("3. Delete Contact")
+    print("4. Display Phone Book")
+    print("5. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        name = input("Enter name: ")
+        number = input("Enter phone number: ")
+        phone_book[name] = number
+        print("Contact added successfully")
+
+    elif choice == 2:
+        name = input("Enter name to search: ")
+        if name in phone_book:
+            print("Phone Number:", phone_book[name])
+        else:
+            print("Contact not found")
+
+    elif choice == 3:
+        name = input("Enter name to delete: ")
+        if name in phone_book:
+            phone_book.pop(name)
+            print("Contact deleted")
+        else:
+            print("Contact not found")
+
+    elif choice == 4:
+        print("\nPhone Book Contacts:")
+        for name, number in phone_book.items():
+            print(name, ":", number)
+
+    elif choice == 5:
+        print("Exiting Phone Book")
+        break
+
+    else:
+        print("Invalid choice")
+
+ Output:
+PHONE BOOK MENU
+1. Add Contact
+2. Search Contact
+3. Delete Contact
+4. Display Phone Book
+5. Exit
+Enter your choice: 1
+Enter name: Bhavya
+Enter phone number: 9876543210
+Contact added successfully
+
+PHONE BOOK MENU
+1. Add Contact
+2. Search Contact
+3. Delete Contact
+4. Display Phone Book
+5. Exit
+Enter your choice: 1
+Enter name: Prachi
+Enter phone number: 7890654321
+Contact added successfully
+
+PHONE BOOK MENU
+1. Add Contact
+2. Search Contact
+3. Delete Contact
+4. Display Phone Book
+5. Exit
+Enter your choice: 2
+Enter name to search: Pihu
+Contact not found
+
+PHONE BOOK MENU
+1. Add Contact
+2. Search Contact
+3. Delete Contact
+4. Display Phone Book
+5. Exit
+Enter your choice: 4
+
+Phone Book Contacts:
+Bhavya : 9876543210
+Prachi : 7890654321
+
+PHONE BOOK MENU
+1. Add Contact
+2. Search Contact
+3. Delete Contact
+4. Display Phone Book
+5. Exit
+Enter your choice: 3
+Enter name to delete: Prachi
+Contact deleted
+
+PHONE BOOK MENU
+1. Add Contact
+2. Search Contact
+3. Delete Contact
+4. Display Phone Book
+5. Exit
+Enter your choice: 4
+
+Phone Book Contacts:
+Bhavya : 9876543210
+
+PHONE BOOK MENU
+1. Add Contact
+2. Search Contact
+3. Delete Contact
+4. Display Phone Book
+5. Exit
+Enter your choice: 5
+Exiting Phone Book
