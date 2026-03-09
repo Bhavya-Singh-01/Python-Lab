@@ -1,10 +1,10 @@
-# Experiment 3
-## String Operations in Python
+Experiment 3
+String Operations in Python
 
-### Aim
+Aim:
 To write a Python program to perform various string operations.
 
-### Algorithm
+Algorithm:
 1. Start the program.
 2. Take a string input from the user.
 3. Find the length of the string.
@@ -14,7 +14,7 @@ To write a Python program to perform various string operations.
 7. Display the results.
 8. Stop the program.
 
-Source Code
+Source Code:
 s=input("enter a string:")
 s2=input("enter another string:")
 
