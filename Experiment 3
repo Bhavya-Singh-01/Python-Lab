@@ -1,0 +1,151 @@
+# Experiment 3
+## String Operations in Python
+
+### Aim
+To write a Python program to perform various string operations.
+
+### Algorithm
+1. Start the program.
+2. Take a string input from the user.
+3. Find the length of the string.
+4. Convert the string to uppercase and lowercase.
+5. Reverse the string.
+6. Check whether the string is a palindrome.
+7. Display the results.
+8. Stop the program.
+
+Source Code
+s=input("enter a string:")
+s2=input("enter another string:")
+
+print("\n----Basic Operations----")
+print("original string:",s)
+print("length:",len(s))
+print("concatenation:",s + " " + s2)
+print("repetition:",s*2)
+print("character at index 2:",s[2]
+      if len(s)>2 else "index out of range")
+print("slicing(0 to 5):",s[0:5])
+
+
+print("\n----CASE CONVERSION FUNCTIONS-----")
+print("upper:",s.upper())
+print("lower:",s.lower())
+print("title:",s.title())
+print("capitalize:",s.capitalize())
+print("swapcase:",s.swapcase())
+
+
+
+print("\n----SEARCH & COUNT OPERATIONS-----")
+print("count of'a':",s.count('a'))
+print("find 'a':",s.find('a'))
+print("rfind 'a':",s.rfind('a'))
+print("index of 'a':",s.index('a') if 'a' in s else "not found")
+
+
+print("\n----CHECKING FUNCTIONS-------")
+print("Is alphabetic:",s.isalpha())
+print("Is numeric:",s.isdigit())
+print("Is alphanumeric:",s.isalnum())
+print("Is lowercase:",s.islower())
+print("Is uppercase:",s.isupper())
+print("Is titlecase:",s.istitle())
+print("Is space:",s.isspace())
+
+print("\n-------START & END CHECK-----")
+print("starts with 'A':",s.startswith('A'))
+print("ends with 'Z':",s.endswith('Z'))
+
+print("\n---------MODIFY STRING---------")
+print("replace 'a' with '@':",s.replace('a','@'))
+print("strip:",s.strip())
+print("left strip:",s.lstrip())
+print("right strip:",s.rstrip())
+
+print("\n----------SPLIT & JOIN-------")
+words=s.split()
+print("split into words:",words)
+print("join with '-':","-".join(words))
+
+print("\n-------ALIGNMENT FUNCTIONS-----")
+print("center(20):",s.center(20,'*'))
+print("left justify(20):",s.ljust(20,'*'))
+print("right justify(20):",s.rjust(20,'*'))
+
+
+print("\n-----ENCODING------")
+print("encoded string:",s.encode())
+
+
+print("\n---------STRING COMPARISON------")
+print("string equals s2:",s==s2)
+print("ASCII comparison:",s>s2)
+
+print("\n-----REVERSE STRING------")
+print("reversed:",s[::-1])
+
+Output:
+enter a string:python
+enter another string:programming
+
+----Basic Operations----
+original string: python
+length: 6
+concatenation: python programming
+repetition: pythonpython
+character at index 2: t
+slicing(0 to 5): pytho
+
+----CASE CONVERSION FUNCTIONS-----
+upper: PYTHON
+lower: python
+title: Python
+capitalize: Python
+swapcase: PYTHON
+
+----SEARCH & COUNT OPERATIONS-----
+count of'a': 0
+find 'a': -1
+rfind 'a': -1
+index of 'a': not found
+
+----CHECKING FUNCTIONS-------
+Is alphabetic: True
+Is numeric: False
+Is alphanumeric: True
+Is lowercase: True
+Is uppercase: False
+Is titlecase: False
+Is space: False
+
+-------START & END CHECK-----
+starts with 'A': False
+ends with 'Z': False
+
+---------MODIFY STRING---------
+replace 'a' with '@': python
+strip: python
+left strip: python
+right strip: python
+
+----------SPLIT & JOIN-------
+split into words: ['python']
+join with '-': python
+
+-------ALIGNMENT FUNCTIONS-----
+center(20): *******python*******
+left justify(20): python**************
+right justify(20): **************python
+
+-----ENCODING------
+encoded string: b'python'
+
+---------STRING COMPARISON------
+string equals s2: False
+ASCII comparison: True
+
+-----REVERSE STRING------
+reversed: nohtyp
+      
+
