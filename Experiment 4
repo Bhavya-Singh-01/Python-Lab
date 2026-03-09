@@ -1,0 +1,67 @@
+# Experiment 4
+## List and Related Functions in Python
+
+### Aim
+To write a Python program to demonstrate list operations and related functions.
+
+### Algorithm
+1. Start the program.
+2. Create a list with some elements.
+3. Display the list.
+4. Add an element to the list using append().
+5. Insert an element at a specific position using insert().
+6. Remove an element using remove().
+7. Sort the list using sort().
+8. Display the updated list.
+9. Stop the program.
+
+Source Code
+list=["cloud computing","deployment","cloud model","info security","service models","IaaS",
+      "PaaS","SaaS","cloud infrastructure","storage","databases","internet","networking",
+      "serverless","aws","azure","google cloud","backup","virtual","development","testing",
+      "big data analysis","AI/ML","cloud security","cost efficient"]
+list1=["csit","bca","ctis","da"]
+my_list=list1.copy()
+print("original list\n",list)
+print("another list\n",list1)
+print("copied list\n",my_list)
+list.append("ITH")
+print("after append:\n",list)
+list.insert(2,"IOT")
+print("after insert:\n",list)
+list.pop(3)
+print("after pop:\n",list)
+print("index of IaaS:",list.index("IaaS"))
+print("count of internet:",list.count("internet"))
+list.extend([list+list1])
+print("after extend:\n",list)
+list.remove("cloud infrastructure")
+print("after remove:\n",list)
+print(list[1:6])
+print("length of list:",len(list))
+list.clear()
+print("after clearing list\n",list)
+
+Output:
+original list
+ ['cloud computing', 'deployment', 'cloud model', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'cloud infrastructure', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient']
+another list
+ ['csit', 'bca', 'ctis', 'da']
+copied list
+ ['csit', 'bca', 'ctis', 'da']
+after append:
+ ['cloud computing', 'deployment', 'cloud model', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'cloud infrastructure', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient', 'ITH']
+after insert:
+ ['cloud computing', 'deployment', 'IOT', 'cloud model', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'cloud infrastructure', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient', 'ITH']
+after pop:
+ ['cloud computing', 'deployment', 'IOT', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'cloud infrastructure', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient', 'ITH']
+index of IaaS: 5
+count of internet: 1
+after extend:
+ ['cloud computing', 'deployment', 'IOT', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'cloud infrastructure', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient', 'ITH', ['cloud computing', 'deployment', 'IOT', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'cloud infrastructure', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient', 'ITH', 'csit', 'bca', 'ctis', 'da']]
+after remove:
+ ['cloud computing', 'deployment', 'IOT', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient', 'ITH', ['cloud computing', 'deployment', 'IOT', 'info security', 'service models', 'IaaS', 'PaaS', 'SaaS', 'cloud infrastructure', 'storage', 'databases', 'internet', 'networking', 'serverless', 'aws', 'azure', 'google cloud', 'backup', 'virtual', 'development', 'testing', 'big data analysis', 'AI/ML', 'cloud security', 'cost efficient', 'ITH', 'csit', 'bca', 'ctis', 'da']]
+['deployment', 'IOT', 'info security', 'service models', 'IaaS']
+length of list: 26
+after clearing list
+ []
