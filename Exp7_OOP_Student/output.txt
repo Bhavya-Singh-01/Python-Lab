@@ -1,0 +1,9 @@
+enter student name:Bhavya
+enter usn:24bcar0013
+enter marks of subject 1:50
+enter marks of subject 2:75
+enter marks of subject 3:89
+enter marks of subject 4:45
+enter marks of subject 5:100
+student: Bhavya
+total marks: 359
