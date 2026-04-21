@@ -1,0 +1,20 @@
+Phone number found: 9876543210
+All digits: ['9', '8', '7', '6', '5', '4', '3', '2', '1', '0', '1', '2', '3']
+Digits using finditer:
+9 at position 19
+8 at position 20
+7 at position 21
+6 at position 22
+5 at position 23
+4 at position 24
+3 at position 25
+2 at position 26
+1 at position 27
+0 at position 28
+1 at position 47
+2 at position 48
+3 at position 49
+After substitution: My phone number is ********** and email is test***@gmail.com
+Split by space: ['My', 'phone', 'number', 'is', '9876543210', 'and', 'email', 'is', 'test123@gmail.com']
+Enter date (dd/mm/yyyy): 21/04/2026
+Valid date format
