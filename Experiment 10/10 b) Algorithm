@@ -1,0 +1,14 @@
+b. Write a Program to implement various types of visualization in python.
+ALGORITHM:
+Step 1: Import Libraries
+Import matplotlib.pyplot and pandas
+Step 2: Load Data
+2. Read dataset using read_csv()
+Step 3: Create Visualizations
+3. Line Chart → Trend over time
+4. Bar Chart → Category comparison
+5. Histogram → Data distribution
+6. Pie Chart → Percentage distribution
+5. Scatter Plot → Relationship between variables
+Step 4: Display Graphs
+6. Use plt.show() for each graph
