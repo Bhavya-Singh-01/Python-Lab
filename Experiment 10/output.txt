@@ -1,0 +1,26 @@
+---- Original Data ----
+   Age  Salary
+0   25   50000
+1   30   60000
+2   NaN  55000
+
+Missing Values:
+Age       1
+Salary    0
+
+---- Cleaned Data ----
+   Age  Salary
+0  25.0  50000
+1  30.0  60000
+2  27.5  55000
+
+First 5 Rows:
+   Age  Salary
+0  25.0  50000
+1  30.0  60000
+2  27.5  55000
+
+Statistical Summary:
+           Age      Salary
+count   3.0000    3.000000
+mean   27.5000  55000.000000
