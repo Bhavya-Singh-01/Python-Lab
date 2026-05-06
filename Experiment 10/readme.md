@@ -1,19 +1,25 @@
 a. Write Program to Load, Clean and Exploring the data using python.
 ALGORITHM
-Step 1: Load Data
-1.Import required libraries (pandas, numpy)
-2.Load dataset using read_csv()
-
-Step 2: Clean Data
-3. Check for missing values using isnull()
-4. Handle missing values:
-   *Fill using mean/median OR
-   *Drop rows/columns
-5.Remove duplicate records
-6.Convert data types if needed
-
-Step 3: Explore Data
-7. Display first few rows (head())
-8. Get dataset info (info())
-9. Get statistical summary (describe())
-10. Check correlation between variables
+Step 1: Data Loading
+1.Start
+2.Import required libraries (pandas, numpy)
+3.Load dataset using read_csv()
+4.Store dataset in a variable (e.g., data)
+Step 2: Data Cleaning
+5.Check for missing values using isnull()
+6.If missing values exist:
+7.Replace with mean/median OR
+8.Remove rows/columns
+9.Check for duplicate records using duplicated()
+10.Remove duplicates using drop_duplicates()
+11.Check data types using dtypes
+12.Convert data types if required
+Step 3: Data Exploration (EDA)
+13.Display first few records using head()
+14.Display last few records using tail()
+15.Get dataset structure using info()
+16.Generate statistical summary using describe()
+17.Find correlation between variables using corr()
+Step 4:
+18.Display cleaned and analyzed data
+19.Stop
